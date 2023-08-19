@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <title>Text Summarization</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+
+    <link rel="stylesheet" href="/static/style.css"/>
+</head>
+
+
+<body style="text-align:center;">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 style="color:green;">
+                Text Summarizer
+            </h1>
+             
+<p>Retrieve the best summary for the text</p>
+        </div>
+    </div>
+
+    <div class="container" style="display: flex; justify-content: space-around;">
+        <p class="original_title col-sm-4">Original Text</p>
+        <p class="summary_title">Summary</p>
+    </div>
+
+    <div class="container srt">
+        <p class="originalTxt col-sm-6">{{original_txt}}</p>
+        <div class="containerb col-sm-6">
+        <p class="summaryalTxt col-sm-6">{{summary}}</p>
+        <button class="btn btn-success" type="submit" style="margin-left: 10px;">
+            words: {{len_summary}}</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="btn btn-danger" type="submit">
+            words: {{len_orig_txt}}</button>
+    </div>
+</body>
+</html>

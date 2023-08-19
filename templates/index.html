@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <title>Text Summarization</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+
+    <link rel="stylesheet" href="/static/style.css"/>
+</head>
+
+
+<body style="text-align:center;">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 style="color:green;">
+                Text Summarizer
+            </h1>
+             
+<p>Retrieve the best summary for the text</p>
+        </div>
+    </div>
+
+    <form action="/analyze" method="POST">
+        <textarea 
+            name="rawtext"
+            class="form-control"
+            , 
+            rows="3" 
+            placeholder="Enter your raw text"
+        ></textarea>
+        <button class="btn btn-primary submitBtn" type="submit">Submit</button>
+    </form>
+</body>
+</html>
